@@ -1,5 +1,5 @@
 {
-	"name": "react-ink-vli-boilerplate",
+	"name": "react-ink-cli-boilerplate",
 	"version": "0.0.0",
 	"license": "MIT",
 	"bin": "dist/cli.js",

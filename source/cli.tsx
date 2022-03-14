@@ -1,25 +1,28 @@
 #!/usr/bin/env node
-import React from 'react';
-import {render} from 'ink';
-import meow from 'meow';
-import App from './ui';
+import React from "react";
+import { render } from "ink";
+import meow from "meow";
+import App from "./ui";
 
-const cli = meow(`
+const cli = meow(
+	`
 	Usage
-	  $ react-ink-vli-boilerplate
+	  $ react-ink-cli-boilerplate
 
 	Options
 		--name  Your name
 
 	Examples
-	  $ react-ink-vli-boilerplate --name=Jane
+	  $ react-ink-cli-boilerplate --name=Jane
 	  Hello, Jane
-`, {
-	flags: {
-		name: {
-			type: 'string'
-		}
+`,
+	{
+		flags: {
+			name: {
+				type: "string",
+			},
+		},
 	}
-});
+);
 
-render(<App name={cli.flags.name}/>);
+render(<App name={cli.flags.name} />);
